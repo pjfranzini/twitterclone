@@ -1,0 +1,20 @@
+<h1>New User</h1>
+
+  <%= form_for @user do |f| %>
+
+   <div class="field">
+    <%= f.label :realName, "Full name:"%><br>
+    <%= f.text_field :realName, size: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :handle %><br>
+    <%= f.text_field :handle,  size: 40  %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email,  size: 40  %>
+  </div>
+   <%= f.submit 'Create new User' %>
+
+  <% end %>
+

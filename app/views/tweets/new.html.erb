@@ -1,0 +1,12 @@
+<h1>New Tweet</h1>
+
+<p>
+  <%= form_for @tweet do |f| %>
+   Tweet here: <%= f.text_area :content %><br />
+   <%= f.submit %>
+   <!-- by default it posts to the collection therefore /tweets
+   Need to go set up the route (post) -->
+  <% end %>
+</p>
+
+
